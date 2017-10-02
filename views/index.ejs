@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="robots" content="all,follow">
+		<title><%= title %></title>
+		
+		<link rel="stylesheet" href="/css/font-awesome.css">
+		<link rel="stylesheet" href="/css/font-awesome-animation.min.css">
+		<link rel="stylesheet" href="/css/bootstrap.min.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+		
+		<!-- onepage scroll stylesheet-->
+		<link rel="stylesheet" href="/css/onepage-scroll.css">
+		<!-- theme stylesheet-->
+		<link rel="stylesheet" href="/css/style.default.css" id="theme-stylesheet">
+		<!-- Custom stylesheet-->
+		<link rel="stylesheet" href="/css/custom.css">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="favicon.png">
+		
+		<!-- SCRIPTS -->
+		<script src="/js/jquery-1.11.0.min.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/jquery.onepage-scroll.js"></script>
+		<script src="js/front.js"></script>
+
+		<!-- http://www.jqueryscript.net/gallery/Fully-Functional-jQuery-Image-Video-Gallery-Plugin-Unite-Gallery.html -->
+		<script type='text/javascript' src='/js/unite-gallery/unitegallery.js'></script>
+		<link rel='stylesheet' href='/unitegallery/css/unite-gallery.css' type='text/css' />
+		<script type='text/javascript' src='/unitegallery/themes/compact/ug-theme-compact.js'></script>
+		
+		
+	</head>
+	
+	
+	<body id="body">
+		<div class="wrapper">
+			<div class="main">
+				<!-- PAGE 1-->
+				<section id="pag1">
+					<div class="overlay">
+						
+					</div>
+					<div class="content">
+						<div class="container clearfix">
+							<div class="row">
+							<a href="" class="btnLang" onClick="ChangeLanguage('en')" style="text-decoration: none;">
+								<img src="/img/flags/lang.en.png" />
+							</a>
+							<a href="" class="btnLang" onClick="ChangeLanguage('ro')" style="text-decoration: none;">
+								<img src="/img/flags/lang.ro.png" />
+							</a>
+							</div>
+							<div class="row">
+								<div class="col-md-8 col-md-offset-2 col-sm-12">
+									<p class="italic">
+										<%= greetings %>
+									</p>
+									<h1>
+										<%= name %>
+									</h1>
+									<p class="italic">
+										<%= beginning %>
+									</p>
+									<p class="italic">
+										
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="icon faa-float animated">
+						<i class="fa fa-angle-double-down">
+						
+						</i>
+					</div>
+				</section>
+				<!-- PAGE 1 END -->
+				
+				<!-- PAGE 2-->
+				<section id="pag2">
+					<div class="content">
+						<div class="container clearfix">
+							<div class="row">
+								<div class="col-md-6"> 
+									<h2 class="heading">
+										<%= about%>
+									</h2>
+									<p class="lead">
+										<%= about_title%>
+									</p>
+									<p>
+										<%= about_pargraph1 %>
+									</p>
+									<p>
+										<%- about_pargraph2 %>
+									</p>
+								</div>
+								<div class="col-md-5 col-md-offset-1">
+									<p>
+										<img src="img/about.jpg" alt="" class="img-responsive img-circle" />
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- PAGE 2 END -->
+				
+				<!-- PAGE 3 -->
+				<section id="page3" class="section-gray">
+					<div class="content">
+						<div class="container clearfix">
+							<div class="row services">
+								<div class="col-md-12" id="projectsDiv">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- PAGE 3 END -->
+				
+				<!-- test page -->
+				<section id="page4">
+					<div class="container clearfix">
+					<div class="row"><div class="col-md-12">
+						<h4 class="heading" id="page4ProjectName">
+							<%= project_loading %>
+						</h4>
+					</div></div>
+					<div class="row">
+						
+						<div id="gallery" style="display:none;">									
+							<img alt="Preview Image"
+								src="/img/not_loaded.gif"
+								data-image="/img/not_loaded.gif"
+								data-description="none">
+						</div>
+					</div>
+					<div class="row" ><div class="col-md-12" id="page4ProjectDescription">
+						
+					</div></div></div>
+				</section>
+				
+	
+				
+				<!-- test page end -->
+			</div>
+		</div>
+		<script>
+			function ChangeLanguage(lang){
+				document.cookie = "lang=" + lang;
+				location.reload();
+			}
+			
+			$('document').ready(function(){
+			$("#gallery").unitegallery();
+				var projects = <%- projects%>;
+				var html = '';
+				html += '\
+					<h2 class="heading">\
+						<%- projects_title %>\
+					</h2>\
+					<div class="row">\
+				';
+				for(var i=0;i<projects.length;i++){
+					if(i%4 == 0 && i > 0){
+						html += '\
+							</div>\
+							<div class="row">\
+						';
+					}
+					html+= '\
+						<div class="col-sm-3">\
+							<div class="box btn" onClick="showProject(' + i +')"><div class="row">\
+								<div class="icon">\
+									<i class="fa fa-desktop">\
+									\
+									</i>\
+								</div></div><div class="row">\
+								<h4 class="heading">\
+									' + projects[i].projectName + '\
+								</h4></div><div class="row">\
+								<p>\
+									' + projects[i].prejectType + '\
+								</p></div>\
+							</div>\
+						</div>\
+					';
+				}
+				html+= '<\div>';
+				$('#projectsDiv').html(html);
+				
+				$("#gallery").bind("mousewheel", function() {	//disable scroll in gallery pentru site
+					return false;
+				});
+
+			});
+			
+			function showProject(number){	//de editat in cazul in care se modifica pagini
+				var a = <%- projects%>;
+				var project = a[number];
+				if($('#body').hasClass('disabled-onepage-scroll') == false){	//not mobile
+					$('#page4').addClass('active');	//aici
+					$('#page3').removeClass('active');	//aici
+					$('#body').removeClass();
+					$('#body').addClass('viewing-page-4');	//aici
+					$('.main').css('transform','translate3d(0px, -300%, 0px)');	//aici
+					$('a[data-index="3"]').removeClass('active');	//aici
+					$('a[data-index="4"]').addClass('active');	//aici
+					
+					
+					//populate gallery
+					$('#page4ProjectName').html(project.projectName);
+					$('#page4ProjectDescription').html('<br>' + project.projectDescription);
+					var html = '';
+					for(var i=0; i<project.projectGallery.length; i++){
+						html += '\
+						<img alt="Preview Image ' + i + '"\
+							 src="/project_images/' + project.projectGallery[i] + '"\
+							 data-image="/project_images/' + project.projectGallery[i] + '"\
+							 data-description="Preview Image '+ i + ' Description">\
+						';
+					}
+					html += '\
+					<img alt="Video"\
+						src="/demos/'+ project.projectDemo + '_thumb.png"\
+						data-type="html5video"\
+						data-image="/demos/'+ project.projectDemo + '.png"\
+						data-videomp4="/demos/'+ project.projectDemo + '.mp4">\
+					';
+					$('#gallery').html(html);
+					$('#gallery').unitegallery();
+				} else{	//mobile
+					//populate gallery
+					$('#page4ProjectName').html(project.projectName);
+					$('#page4ProjectDescription').html('<br>' + project.projectDescription);
+					var html = '';
+					for(var i=0; i<project.projectGallery.length; i++){
+						html += '\
+						<img alt="Preview Image ' + i + '"\
+							 src="/project_images/' + project.projectGallery[i] + '"\
+							 data-image="/project_images/' + project.projectGallery[i] + '"\
+							 data-description="Preview Image '+ i + ' Description">\
+						';
+					}
+					html += '\
+					<img alt="Video"\
+						src="/demos/'+ project.projectDemo + '_thumb.png"\
+						data-type="html5video"\
+						data-image="/demos/'+ project.projectDemo + '.png"\
+						data-videomp4="/demos/'+ project.projectDemo + '.mp4">\
+					';
+					$('#gallery').html(html);
+					$('#gallery').unitegallery();
+					
+				}
+			}
+			
+		</script>
+	</body>
+	
+	
+</html>

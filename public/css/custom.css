@@ -1,0 +1,48 @@
+/* your styles go here */
+
+#pag1 {
+  text-align: center;
+  background: url('../img/macbook-juice.jpg') center center no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+#pag1 h1,
+#pag1 h2,
+#pag1 h3 {
+  color: #fff;
+}
+#pag1 p {
+  font-size: 20px;
+}
+#pag1 .icon {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: solid 2px #fff;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.btnLang{
+	width: 64px;
+	height: 48px;
+	border-radius: 100%;
+    border: 0;
+	background: transparent;
+	text-decoration: none;
+}
+
+.btnLang img{
+	width: 64px;
+	height: 48px;
+	border-radius: 100%;
+	border: 0;
+}
+
+div.box.btn{
+	display: block;
+}
