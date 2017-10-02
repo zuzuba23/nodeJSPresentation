@@ -43,7 +43,8 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-var server = app.listen(8080, function () {
+var server_port = process.env.PORT || 8080;
+var server = app.listen(server_port, function () {
    var host = server.address().address
    var port = server.address().port
    
