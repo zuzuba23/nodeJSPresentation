@@ -1,12 +1,12 @@
 {
 	"title": "ZuzUBA",
 	"greetings": "Oh, hello, nice to meet you!",
-	"name": "My name is ZuzUBA.",
-	"beginning": "This is my portfolio and a short presentation about myself.",
+	"name": "My name is Octavian.",
+	"beginning": "This is a short description about me and the projects that I worked or working on",
 	"about": "About me",
 	"about_title": "I like technology. Who doesn't?",
 	"about_pargraph1": "Information Technology is my passion since I was 10. Programming became my passion since highschool, an I kept improving since. I see myself as an young talented person with a keen sense for details.",
-	"about_pargraph2": "In my spare time I like working on small personal projects, watching movies, playing video games, going out with my friends, playing football tennis and also working on my newly discovered talent cooking deserts.<br>Let's hope I get to be a Master Chef :D",
+	"about_pargraph2": "In my spare time I like working on small personal projects, watching movies, playing video games, going out with my friends, playing football tennis and also working on my newly discovered talent: preparing desserts and pastry.<br>Let's hope I get to be a Master Chef :D",
 	"projects_title": "Projects",
 	"project_loading": "Here you'll see the project selected on the previous page."
 }
