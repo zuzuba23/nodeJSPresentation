@@ -83,5 +83,42 @@
 			"4_7.png",
 			"4_8.png"
 		]
+	},
+	{
+		"projectName": "B0xiT",
+		"prejectType": "Android Game",
+		"projectDescription" : "Descriere in romana",
+		"projectDemo": "demo_5",
+		"projectGallery": [
+			"5_1.png",
+			"5_2.png",
+			"5_3.png",
+			"5_4.png",
+			"5_5.png",
+			"5_6.png",
+			"5_7.png",
+			"5_8.png",
+			"5_9.png",
+			"5_10.png",
+		]
+	},
+	{
+		"projectName": "Navigare Retea",
+		"prejectType": "Application",
+		"projectDescription" : "Descriere in romana",
+		"projectDemo": "demo_6",
+		"projectGallery": [
+			"6_1.png",
+			"6_2.png",
+			"6_3.png",
+			"6_4.png",
+			"6_5.png",
+			"6_6.png",
+			"6_7.png",
+			"6_8.png",
+			"6_9.png",
+			"6_10.png",
+			"6_11.png",
+		]
 	}
 ]

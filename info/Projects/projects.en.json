@@ -83,5 +83,42 @@
 			"4_7.png",
 			"4_8.png"
 		]
+	},
+	{
+		"projectName": "B0xiT",
+		"prejectType": "Android Game",
+		"projectDescription" : "I’ve created a game for mobile devices named B0xiT. I’ve used Unity as the IDE and C# as the programming language. This is a puzzle game in which the player must drag a box on the production band to collect stars and complete some challenges. The perspective is from above the box, and the playable area is not visible from the start. As long as the player reveals the map, he can discover obstacles and rewards used to complete the level.",
+		"projectDemo": "demo_5",
+		"projectGallery": [
+			"5_1.png",
+			"5_2.png",
+			"5_3.png",
+			"5_4.png",
+			"5_5.png",
+			"5_6.png",
+			"5_7.png",
+			"5_8.png",
+			"5_9.png",
+			"5_10.png",
+		]
+	},
+	{
+		"projectName": "Network Navi",
+		"prejectType": "Application",
+		"projectDescription" : "My bachelor’s degrees subject was ”Application for 3D navigation within a computer network”. It consisted of two major parts. A software that permits representation of the 3D space and a software that retrieves the information about connected devices. For developing my project I used the ITIMF computers and network equipment. The computers were running Windows operating system. For the retrieval of the computer’s information (hostname, IP address, MAC address, Operating System) I’ve created a Windows service that implements a protocol named CDP (Cisco Discovery Protocol) which creates a packet with the information needed and sends it on each network interface the computer has. I’ve created this service using C++ programming language and the Linux similar program. For the 3D representation of the network I’ve used the Unity IDE with C# programming language. The application connects to a server through a websocket and retrieves the information it needs to render all the elements (rooms, PCs, switches, routers, servers, printers). The user can interact with the objects and move them around or find useful information about them (hostname, IP address, MAC address and connectivity like the status of the device: on or off). This is an useful application because it eases the job of an IT technician.",
+		"projectDemo": "demo_6",
+		"projectGallery": [
+			"6_1.png",
+			"6_2.png",
+			"6_3.png",
+			"6_4.png",
+			"6_5.png",
+			"6_6.png",
+			"6_7.png",
+			"6_8.png",
+			"6_9.png",
+			"6_10.png",
+			"6_11.png",
+		]
 	}
 ]
