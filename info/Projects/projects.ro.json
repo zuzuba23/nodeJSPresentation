@@ -16,7 +16,7 @@
 	{
 		"projectName": "LTeam",
 		"prejectType": "Web Tool",
-		"projectDescription" : "Descriere in romana",
+		"projectDescription" : "Am creat o unealta pentru generarea a doua echipe cu membri aleatori. Toti participantii isi aleg o porecla dupa care un capitan genereaza cele doua echipe. Am folosit NodeJS pentru server si bootstrap pentru design-ul paginilor. Am folosit socket-i pentru conexiunea in timp real dintre participanti. Capitanul viziteaza adresa https://lteama.tk iar participantii http://lteam.tk.",
 		"projectDemo": "demo_1",
 		"projectGallery": [
 			"1_1.png",
@@ -31,7 +31,7 @@
 	{
 		"projectName": "Tabla",
 		"prejectType": "Tool",
-		"projectDescription" : "Descriere in romana",
+		"projectDescription" : "Aceasta aplicatie am creat-o folosind Visual C#. Avand data o bucata de material (fier, material textil, etc.) de o anumita dimensiune cu gauri, se genereaza doua taieturi optime ce aplicate acestei bucati, se obtine o bucata neperforata, utilizabila.",
 		"projectDemo": "demo_2",
 		"projectGallery": [
 			"2_1.png",
@@ -46,7 +46,7 @@
 	{
 		"projectName": "iziApp",
 		"prejectType": "Web application",
-		"projectDescription" : "Descriere in romana",
+		"projectDescription" : "In decembrie 2016, alaturi de doi colegi de-ai mei am participat la concursul 3ITC organizat de departamentul ITIMF din cadrul Universitatii Petrol-Gaze din Ploiesti. Am obtinut locul intai cu aplicatia \"iziApp\". Principalul scop al acestei aplicatii este de a usura comunicarea si interactiunea dintre un profesor si studentii sai. Aplicatia permite profesorului sa creeze conturi pentru fiecare din studentii sai, sa-si creeze si organizeze clase, sa posteze anumite informatii despre evenimentele ce urmeaza sau despre desfasurarea cursurilor si chiar sa trimita materiale electronice precum carti, tutoriale video, fisiere de exercitii, etc. O alta functionalitate a aplicatiei este aceea de a crea si intia chestionare. De exemplu, la sfarsitul unei prelegeri un profesor creeaza un set de intrebari pentru a testa cunostintele dobandite de studentii sai. Chestionarul apare pe dispozitivele studentilor iar acestia raspund la intrebari. Profesorul primeste rezultatele in timp real. Pentru dezvoltarea acestei aplicatii am folosit NodeJS impreuna cu framework-ul express pentru implementarea unui model MVC. Deasemenea pentru interactiunea in timp real am folosit socket-i. Ca motor de template-izare am folosit EJS iar pentru design am folosit bootstrap. Aplicatia este disponibila la adresa https://iziapp.herkuapp.com",
 		"projectDemo": "demo_3",
 		"projectGallery": [
 			"3_1.png",
@@ -71,7 +71,7 @@
 	{
 		"projectName": "ShopMApp",
 		"prejectType": "Android Application",
-		"projectDescription" : "Descriere in romana",
+		"projectDescription" : "Am participat la hackathon-ul organizat de Adfaber cu aplicatia ShopMApp. Aplicatia este destinata dispozitivelor cu sistemul de operare Android si scopul sau este de a usura cumparaturile intr-un magazin. Iti alegi produsele pe care le doresti din magazin iar aplicatia iti genereaza un drum optim pentru a cumpara produsele dorite, generand astfel o harta personalizata a magazinului. De exemplu, atunci cand te afli intr-un supermarket, nu stii exact locul unde se gasesc anumite produse pe care le cauti, deci folosing aplicatia poti afla acest lucru foarte usor. Mai poti deasemenea sa iti intocmesti o lista de cumparaturi de acasa si sa urmezi indicatiile oferite cand mergi la supermarket cu ajutorul hartii. Pentru realizarea acestei aplicatii am folosit ca limbaj de programare Java si XML pentru design, Android Studio ca IDE si Oracle Database pentru baza de date.",
 		"projectDemo": "demo_4",
 		"projectGallery": [
 			"4_1.png",
@@ -87,7 +87,7 @@
 	{
 		"projectName": "B0xiT",
 		"prejectType": "Android Game",
-		"projectDescription" : "Descriere in romana",
+		"projectDescription" : "Am creat un joc pentru dispozitivele mobile numit B0xiT. Am folosit Unity ca IDE si C# ca limbaj de programare. Acest joc este de unul de tip puzzle. Jucatorul trebuie sa miste o cutie pe banda de producite care s-a defectat, sa colecteze stele si sa treaca de toate provocarile ce pot aparea. Jucatorul vede cutia de desupra iar zona pe care o poate deplasa nu este vizibila, pentru a spori gradul de dificultate. Cat timp jucatorul muta cutia dintr-un loc in altul, zona se extinde, evidentiind anumite obstacole sau stelute ce trebuie colectate pentru a completa nivelul.",
 		"projectDemo": "demo_5",
 		"projectGallery": [
 			"5_1.png",
@@ -105,7 +105,7 @@
 	{
 		"projectName": "Navigare Retea",
 		"prejectType": "Application",
-		"projectDescription" : "Descriere in romana",
+		"projectDescription" : "Subiectul lucrarii mele de licenta a fost \"Aplicatie pentru navigarea 3D intr-o retea de calculatoare\". Aceasta consta din doua parti. O aplicatie pentru navigarea propriu-zisa in spatiul 3D si o aplicatie (serviciu) care preia informatiile despre conexiunea dintre dispozitive. Pentru realizarea proiectului m-am ajutat de reteaua departamentului ITIMF din cadrul Universitatii Petrol-Gaze din Ploiesti. Calculatoarele foloseau sistemul de operare Windows. Pentru preluarea informatiilor despre calculatoare (nume de gazda, adresa IP, adresa MAC, sistemul de operare) am creat un serviciu Windows ce implementeaza protocolul CDF (Cisco Discovery Protocol) ce creaza un pachet cu informatia selectata si il trimite pe toate interfetele de retea ale dispozitivului pe care ruleaza. Am creat acest serviciu folosid limbajul de programare C++ si ajutandu-ma de unealta existenta in sistemul de operare Linux. Pentru reprezentarea 3D a retelei am folosit IDE-ul Unity si limbajul de programare C#. Aplicatia se conecteaza la un server prin intermediul unui Websocket si preia informatiile de care are nevoie pentru a reda intreg spatiul 3D printre care si elementele ce il compun (camere, PC-uri, Switch-uri, Router-e, server-e, imprimante). Utilizatorul poate interactiona cu obiectele, le poate muta in camera sau poate afla informatii despre ele (numele de gazda, adresa IP, adresa MAC si informatii despre conectivitate precum status-ul dispozitivului: porint sau oprit). Aceasta unealta usureaza munca unui Tehnician IT sau a unui manager de retele.",
 		"projectDemo": "demo_6",
 		"projectGallery": [
 			"6_1.png",

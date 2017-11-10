@@ -71,7 +71,7 @@
 	{
 		"projectName": "ShopMApp",
 		"prejectType": "Android Application",
-		"projectDescription" : "I’ve took part in Adfaber’s hackathon with the application ShopMApp. This application runs on Android devices and its purpose is to ease a person’s shopping activity. You have to choose the products you’re looking for in a supermarket and the app finds an optimal way for you to get all the items you asked, marking them on a store map. For example, when you go shopping you don’t know all the items’ location in that store you’re in, so by checking with the application you can easily see where the product you’re looking for is located, or you can create a shopping list from home and follow the map indications when you are in the store. For this application I’ve used Java and XML as the programming languages, the Android Studio IDE and Oracle Database for the database.",
+		"projectDescription" : "I took part in Adfaber’s hackathon with the application ShopMApp. This application runs on Android devices and its purpose is to ease a person’s shopping activity. You have to choose the products you’re looking for in a supermarket and the app finds an optimal way for you to get all the items you asked, marking them on a store map. For example, when you go shopping you don’t know all the items’ location in that store you’re in, so by checking with the application you can easily see where the product you’re looking for is located, or you can create a shopping list from home and follow the map indications when you are in the store. For this application I’ve used Java as the programming language and XML for the design, the Android Studio IDE and Oracle Database for the database.",
 		"projectDemo": "demo_4",
 		"projectGallery": [
 			"4_1.png",
